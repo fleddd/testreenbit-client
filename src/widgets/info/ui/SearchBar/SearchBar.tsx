@@ -1,7 +1,7 @@
 import { useChatsStore } from "@/entities/chat/model";
 
 const SearchBar = () => {
-  const { searchedChat, setSearchedChat } = useChatsStore();
+  const { setSearchedChat } = useChatsStore();
   return (
     <input
       onChange={(e) => setSearchedChat(e.target.value)}
